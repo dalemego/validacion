@@ -4,7 +4,7 @@ La presente documentación muestra los detalles de la implementación del sistem
 
 ## Servicios disponibles
 
-La solución del sistema de pagos contará con los siguientes servicios expuestos desde Open API:
+La solución del sistema de pagos contará con los siguientes servicios expuestos desde [Open API](https://app.swaggerhub.com/home?type=API):
 
 - Pagar convenio: Envía petición de pago incluyendo el número de convenio y referencia de pago en la factura del cliente.
 - Consultar convenio: Consulta el saldo del convenio a pagar a partir de un número de identificación de convenio que se encuentra almacenado en la base de datos local del banco.
@@ -37,14 +37,12 @@ Servicio
 
 ## Installation
 
-Use el siguiente comando para crear los contenedores en Docker.
+Use el siguiente comando para crear los contenedores en [Docker](https://www.docker.com).
 
 ```bash
 docker-compose up --build -d
 ```
 Se requiere Docker para su compilación.
-
-[Docker](https://www.docker.com)
 
 ## Usage
 
