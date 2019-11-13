@@ -1,0 +1,46 @@
+version: "3.1"
+services:
+    transformtaller:
+        build:
+          context: .
+          dockerfile: "transformtaller/Dockerfile"
+        ports:
+          - 8081:8081
+        container_name: transformtaller
+        hostname: transformtaller
+        networks: 
+          - provider-net
+    dispatchertaller:
+        build:
+          context: .
+          dockerfile: "dispatchertaller/Dockerfile"
+        ports:
+          - 8082:8082
+        container_name: dispatchertaller
+        hostname: dispatchertaller
+        networks: 
+          - provider-net
+    conveniotaller:
+        build:
+          context: .
+          dockerfile: "conveniotaller/Dockerfile"
+        ports:
+          - 8083:8083
+        container_name: conveniotaller
+        hostname: conveniotaller
+        networks: 
+          - provider-net
+    cleintetaller:
+        build:
+          context: .
+          dockerfile: "cleintetaller/Dockerfile"
+        ports:
+          - 8080:8080
+        container_name: cleintetaller
+        hostname: cleintetaller
+        networks: 
+          - provider-net      
+          
+networks:
+  provider-net:
+    driver: bridge      
