@@ -16,8 +16,10 @@ La solución del sistema de pagos contará con los siguientes servicios expuesto
 
 Se utiliza el patrón de microservicios como nuclear de la arquitectura contando con despliegues en contenedores para una mayor disponibilidad y simplicidad de los servicios necesarios para la gestión de los pagos y convenios. Adicional a esto, se utilizan los siguientes patrones y tecnologías
 
+- Composición por Orquestación
 - Layers
 - API Proxy
+- API Gateway (se implementó micro servicios se habilitó la opción de api gateway por medio del api management de AZURA http://testdev.azure-api.net
 - Spring Boot
 - Open API
  
