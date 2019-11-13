@@ -37,11 +37,14 @@ Servicio
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use el siguiente comando para crear los contenedores en Docker.
 
 ```bash
-pip install foobar
+docker-compose up --build -d
 ```
+Se requiere Docker para su compilación.
+
+[Docker](https://www.docker.com)
 
 ## Usage
 
