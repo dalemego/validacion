@@ -39,6 +39,15 @@ Servicio
    ServicioPlantillaConvenioProxy
 ```
 
+El servicio de transformación se utilizo por medio del patron Proxy el cual por medio de **ServicioPlantillaConvenioProxy** se controlara el acceso a cada una de las funciones de transformación ya sea para SOAP o REST.
+
+Para realizar el proceso de transformación se implementaron los estilos de transformación, para facilitar la creación de peticiones y respuestas por medio de plantillas dependiendo del tipo de arquitecrua a nivel de servicios SOAP o REST. Los procesos implementados son:
+
+- XSLT (eXtensible Stylesheet Language for Transformations) [link](https://docs.oracle.com/javase/tutorial/jaxp/xslt/transformingXML.html)
+- JSLT (Json stylesheet language transformation) [link](https://github.com/schibsted/jslt)
+
+
+
 ## Installation
 
 Use el siguiente comando para crear los contenedores en [Docker](https://www.docker.com).
@@ -47,21 +56,3 @@ Use el siguiente comando para crear los contenedores en [Docker](https://www.doc
 docker-compose up --build -d
 ```
 Se requiere Docker para su compilación.
-
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
