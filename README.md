@@ -19,9 +19,11 @@ Se utiliza el patrón de microservicios como nuclear de la arquitectura contando
 - Composición por Orquestación
 - Layers
 - API Proxy
-- API Gateway (se implementó micro servicios se habilitó la opción de api gateway por medio del api management de AZURA http://testdev.azure-api.net
+- API Gateway 
 - Spring Boot
 - Open API
+
+Con respecto al API Gateway, este se implementó en una arquitectura de microservicios, se habilitó su uso por medio del API management de Microsoft Azure el cual está disponible en el siguiente [link](http://testdev.azure-api.net)
  
 ## Servicio de transformación de datos
 El servicio se desarrolla en la herramienta Spring Boot y tiene la responsabilidad de recibir la información del cliente, transformar los datos, y enrutar al servicio del convenio correspondiente dependiendo del tipo de servicio. La estructura implementada es la siguiente:
