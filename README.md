@@ -38,6 +38,20 @@ Servicio
  Proxy
    ServicioPlantillaConvenioProxy
 ```
+## Servicio de despachador
+El módulo de despachador cuenta con los siguientes servicios y definiciones dentro de la herramiente Swagger:
+
+```bash
+Path
+   PagarReferenciaPost
+   ReferenciaPagoPost
+   
+Definitions
+   DespachadorpagarSOAPRequest
+   DespachadorpagarRESTRequest
+   DespachadorconsultarRESTRequest
+   DespachadorconsultarSOAPRequest
+```
 
 ## Installation
 
@@ -50,13 +64,7 @@ Se requiere Docker para su compilación.
 
 ## Usage
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+Para hacer uso de los servicios y realizar la pruebas correspondientes se recomienda la herramienta Postman o SwaggerHub, para esto, importar el proyecto que ya contiene los puertos configurados para cada servicio en el servidor de Microsoft Azure.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
